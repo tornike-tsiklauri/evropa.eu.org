@@ -1,1 +1,175 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evropa.eu.org - European Values Hub</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Tailwind Configuration (optional but good for specific colors/fonts) */
+        :root {
+            /* Using a dark, authoritative blue for the background */
+            --color-primary-dark: #1e3a8a; /* Indigo-900 */
+            /* Using a bright, clean blue for accents */
+            --color-accent-blue: #3b82f6; /* Blue-500 */
+            /* Using a gold/yellow for secondary accents, like stars */
+            --color-accent-gold: #fbbf24; /* Amber-400 */
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+        }
+
+        /* Custom Card Shadow and Transition for visual richness */
+        .article-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Navigation Header -->
+    <header class="bg-primary-dark text-white shadow-lg sticky top-0 z-10" style="background-color: var(--color-primary-dark);">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo/Title -->
+            <a href="#" class="text-2xl font-extrabold tracking-tight flex items-center">
+                <span class="text-accent-gold mr-1" style="color: var(--color-accent-gold);">★</span>
+                Evropa<span class="text-accent-gold">.eu.org</span>
+            </a>
+            
+            <!-- Navigation Links (Hidden on mobile, shown on medium screens and up) -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#" class="hover:text-accent-gold transition duration-150">Home</a>
+                <a href="#" class="hover:text-accent-gold transition duration-150">Publications</a>
+                <a href="#" class="hover:text-accent-gold transition duration-150">Journals</a>
+                <a href="#" class="hover:text-accent-gold transition duration-150">About Us</a>
+            </nav>
+
+            <!-- Mobile Menu Button (Optional: requires JS for full functionality, but good for UX) -->
+            <button class="md:hidden p-2 rounded-md hover:bg-indigo-700 transition duration-150">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section - Engaging Banner -->
+    <section class="bg-white border-b-4 border-accent-blue py-12 md:py-20" style="border-color: var(--color-accent-blue);">
+        <div class="container mx-auto px-4 text-center max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                Accelerating <span class="text-accent-blue" style="color: var(--color-accent-blue);">European Integration</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+                Your hub for news, publications, and journals dedicated to promoting European values and raising public awareness in Georgia.
+            </p>
+            <a href="#" class="inline-block bg-accent-blue text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 transform hover:scale-105" style="background-color: var(--color-accent-blue);">
+                Explore Latest Articles
+            </a>
+        </div>
+    </section>
+
+    <!-- 3. Main Content Grid - Visually Rich Cards -->
+    <main class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10 border-b-2 pb-2">Recent Publications</h2>
+
+        <!-- Responsive Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1: News Article -->
+            <a href="#" class="article-card bg-white rounded-xl overflow-hidden block">
+                <div class="h-48 bg-gray-200 overflow-hidden">
+                    <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=European+Parliament" alt="Image related to European Parliament" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <span class="text-sm font-semibold text-accent-blue uppercase mb-2 block" style="color: var(--color-accent-blue);">News</span>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 leading-snug">
+                        The Latest Decisions from the European Parliament on Candidate Status
+                    </h3>
+                    <p class="text-gray-600 text-sm line-clamp-3">
+                        A detailed analysis of the recent voting results and resolutions that directly impact the Euro-Atlantic trajectory of Georgia.
+                    </p>
+                    <div class="mt-4 text-xs text-gray-400">
+                        October 26, 2025 · 5 min read
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 2: Journal/Research -->
+            <a href="#" class="article-card bg-white rounded-xl overflow-hidden block">
+                <div class="h-48 bg-gray-200 overflow-hidden">
+                    <img src="https://placehold.co/600x400/fbbf24/1e3a8a?text=Research+Report" alt="Image of a research report" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <span class="text-sm font-semibold text-accent-gold uppercase mb-2 block" style="color: var(--color-accent-gold);">Journal</span>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 leading-snug">
+                        Economic Reforms and Harmonization: A Comparative Study of EU Members
+                    </h3>
+                    <p class="text-gray-600 text-sm line-clamp-3">
+                        Exploring the fiscal adjustments required for non-EU states to successfully integrate into the single market structure.
+                    </p>
+                    <div class="mt-4 text-xs text-gray-400">
+                        September 1, 2025 · 12 min read
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3: Student Focus/Book -->
+            <a href="#" class="article-card bg-white rounded-xl overflow-hidden block">
+                <div class="h-48 bg-gray-200 overflow-hidden">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Students+Studying" alt="Image of students studying" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <span class="text-sm font-semibold text-indigo-500 uppercase mb-2 block">Student Guide</span>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 leading-snug">
+                        Erasmus+ and Beyond: Opportunities for Georgian Students in Europe
+                    </h3>
+                    <p class="text-gray-600 text-sm line-clamp-3">
+                        A comprehensive guide to exchange programs, scholarships, and academic resources available to Georgian youth.
+                    </p>
+                    <div class="mt-4 text-xs text-gray-400">
+                        August 15, 2025 · 8 min read
+                    </div>
+                </div>
+            </a>
+            
+            <!-- More Cards could follow here... -->
+
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="mt-16 text-center bg-primary-dark p-10 rounded-xl" style="background-color: var(--color-primary-dark);">
+            <h3 class="text-3xl font-bold text-white mb-3">Don't Miss Out on New Publications!</h3>
+            <p class="text-indigo-200 mb-6">Subscribe to our newsletter for the latest updates on Euro-integration.</p>
+            <form class="max-w-md mx-auto flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <input type="email" placeholder="Enter your email address" class="w-full p-3 rounded-lg border-2 border-transparent focus:border-accent-gold focus:ring-0 transition duration-200" required>
+                <button type="submit" class="bg-accent-gold text-primary-dark font-bold px-6 py-3 rounded-lg shadow-xl hover:bg-amber-300 transition duration-300">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- 4. Footer -->
+    <footer class="bg-gray-800 text-gray-400 mt-12">
+        <div class="container mx-auto px-4 py-8 text-center">
+            <div class="mb-4">
+                <a href="#" class="mx-2 hover:text-white transition duration-150">Privacy Policy</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="mx-2 hover:text-white transition duration-150">Contact</a>
+            </div>
+            <p class="text-sm">&copy; 2025 Evropa.eu.org. All Rights Reserved. Built with a commitment to European Values.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
