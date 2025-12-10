@@ -1,0 +1,83 @@
+/* ფონტის დაყენება მთელი საიტისთვის */
+body {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ევროკავშირის ლურჯი ფერი */
+.bg-eu-blue {
+    background-color: #003399 !important;
+}
+
+.text-eu-blue {
+    color: #003399 !important;
+}
+
+.btn-eu-blue {
+    background-color: #003399;
+    color: white;
+    border: none;
+}
+
+.btn-eu-blue:hover {
+    background-color: #002266;
+    color: white;
+}
+
+/* Hero სექციის ფონი */
+.hero-section {
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_the_European_Union.svg/1200px-Flag_of_the_European_Union.svg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ბარათების ჰოვერ ეფექტი */
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+/* აიკონების ფონი ბარათებში */
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+}
+
+/* ნავიგაციის ლინკები */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.85);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active {
+    color: #ffcc00; /* ევროკავშირის ვარსკვლავების ფერი */
+    font-weight: bold;
+}
+/* პროგრეს ბარების სტილი */
+.progress {
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Timeline-ის სტილი მობილურისთვის */
+@media (max-width: 768px) {
+    .border-start {
+        border-left: 5px solid !important;
+        border-right: none !important;
+        border-top: none !important;
+        border-bottom: none !important;
+    }
+    .display-4 {
+        font-size: 2.5rem; /* ტექსტის ზომის შემცირება მობილურზე */
+        margin-bottom: 1rem;
+    }
+}
