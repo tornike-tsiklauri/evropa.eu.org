@@ -1,113 +1,192 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evropa.eu.org - Coming Soon</title>
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Inter Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        /* Custom Tailwind Configuration (optional but good for specific colors/fonts) */
-        :root {
-            /* Using a dark, authoritative blue for the background */
-            --color-primary-dark: #1e3a8a; /* Indigo-900 */
-            /* Using a bright, clean blue for accents */
-            --color-accent-blue: #3b82f6; /* Blue-500 */
-            /* Using a gold/yellow for secondary accents, like stars */
-            --color-accent-gold: #fbbf24; /* Amber-400 */
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-        }
-
-        /* Custom Card Shadow and Transition for visual richness */
-        .article-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-        .article-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-
-        /* Hero animation */
-        .hero-content {
-            animation: fadeInUp 1s ease-out;
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <title>დეზინფორმაცია და ევროინტეგრაცია | evropa.eu.org</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- 1. Navigation Header -->
-    <header class="bg-primary-dark text-white shadow-lg sticky top-0 z-10" style="background-color: var(--color-primary-dark);">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- Logo/Title -->
-            <a href="#" class="text-2xl font-extrabold tracking-tight flex items-center">
-                <span class="text-accent-gold mr-1" style="color: var(--color-accent-gold);">★</span>
-                Evropa<span class="text-accent-gold">.eu.org</span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-eu-blue sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-star text-warning"></i> EVROPA.EU.ORG
             </a>
-            
-            <!-- Navigation Links (Hidden on mobile, shown on medium screens and up) -->
-            <nav class="hidden md:flex space-x-6 text-sm font-medium">
-                <a href="#" class="hover:text-accent-gold transition duration-150">Home</a>
-                <a href="#" class="hover:text-accent-gold transition duration-150">Publications</a>
-                <a href="#" class="hover:text-accent-gold transition duration-150">Journals</a>
-                <a href="#" class="hover:text-accent-gold transition duration-150">About Us</a>
-            </nav>
-
-            <!-- Mobile Menu Button (Optional: requires JS for full functionality, but good for UX) -->
-            <button class="md:hidden p-2 rounded-md hover:bg-indigo-700 transition duration-150">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">მთავარი</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">I. მედიის ისტორია</a></li>
+                    <li class="nav-item"><a class="nav-link" href="disinfo.html">II. დეზინფორმაცია</a></li>
+                    <li class="nav-item"><a class="nav-link" href="society.html">III. საზოგადოება</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <header class="hero-section d-flex align-items-center text-white text-center position-relative">
+        <div class="container position-relative z-index-1">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold text-uppercase shadow-sm">აკადემიური ნაშრომი</div>
+                    <h1 class="display-4 fw-bolder mb-3">დეზინფორმაცია ევროინტეგრაციის გარშემო</h1>
+                    [span_0](start_span)<p class="lead mb-5 opacity-75">როგორ ვრცელდება ყალბი ამბები ციფრულ მედიაში და რა გავლენას ახდენს ის საქართველოს ისტორიულ არჩევანზე[span_0](end_span).</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-warning btn-lg px-4 gap-3 fw-bold shadow-sm hover-lift" href="#chapters">დაიწყე კითხვა</a>
+                        <a class="btn btn-outline-light btn-lg px-4 hover-lift" href="#about">პროექტის შესახებ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
     </header>
 
-    <!-- 2. Hero Section - Engaging Banner -->
-    <section class="bg-white border-b-4 border-accent-blue py-12 md:py-20" style="border-color: var(--color-accent-blue);">
-        <div class="container mx-auto px-4 text-center max-w-4xl hero-content">
-            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
-                Coming Soon: <span class="text-accent-blue" style="color: var(--color-accent-blue);">European Values Hub</span>
-            </h1>
-            <p class="text-xl text-gray-600 mb-8">
-                We're working hard to bring you the latest news, publications, and journals dedicated to promoting European values and raising public awareness in Georgia. Stay tuned for our launch!
-            </p>
-            <form class="max-w-md mx-auto flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <input type="email" placeholder="Enter your email address" class="w-full p-3 rounded-lg border-2 border-transparent focus:border-accent-gold focus:ring-0 transition duration-200" required>
-                <button type="submit" class="bg-accent-gold text-primary-dark font-bold px-6 py-3 rounded-lg shadow-xl hover:bg-amber-300 transition duration-300">
-                    Subscribe
-                </button>
-            </form>
+    <section id="about" class="py-5">
+        <div class="container my-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold text-eu-blue mb-3">რატომ არის ეს მნიშვნელოვანი?</h2>
+                    [span_1](start_span)<p class="lead text-muted">საქართველოს მოსახლეობისთვის ევროინტეგრაცია ისტორიული მიზანია, თუმცა ამ გზაზე სერიოზული გამოწვევაა საზოგადოებრივ აზრზე ზეგავლენის მცდელობები[span_1](end_span).</p>
+                    <p>ეს ვებგვერდი ეფუძნება კვლევას, რომელიც შეისწავლის რუსულ "რბილ ძალას", ყალბ ნარატივებს სოციალურ ქსელებში და საზოგადოების მედიაწიგნიერების დონეს ციფრულ ეპოქაში.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg bg-light">
+                        <div class="card-body p-5 position-relative">
+                            <i class="fas fa-quote-left fa-3x text-primary opacity-25 position-absolute top-0 start-0 m-3"></i>
+                            <h4 class="mt-3 mb-4 fw-bold text-dark">საკვლევი კითხვა:</h4>
+                            [span_2](start_span)<p class="fs-5 fst-italic text-secondary">"როგორ და რა სახით ვრცელდება დეზინფორმაცია საქართველოს ევროინტეგრაციასთან დაკავშირებით ციფრულ მედიაში და რამდენად არის საზოგადოება მის მიმართ მდგრადი?"[span_2](end_span)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-
-
-    <!-- 4. Footer -->
-    <footer class="bg-gray-800 text-gray-400 mt-12">
-        <div class="container mx-auto px-4 py-8 text-center">
-            <div class="mb-4">
-                <a href="#" class="mx-2 hover:text-white transition duration-150">Privacy Policy</a>
-                <span class="text-gray-600">|</span>
-                <a href="#" class="mx-2 hover:text-white transition duration-150">Contact</a>
+    <section class="py-5 bg-eu-blue text-white position-relative">
+        <div class="container position-relative z-index-1">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="stats-card p-4 rounded-3 h-100">
+                        <div class="icon-circle bg-white text-primary mx-auto mb-3">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h2 class="display-4 fw-bold">70%</h2>
+                        [span_3](start_span)<p class="mb-0 text-white-50">საქართველოს მოსახლეობისა იყენებს ონლაინ მედია პლატფორმებს[span_3](end_span).</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-card p-4 rounded-3 h-100">
+                        <div class="icon-circle bg-warning text-dark mx-auto mb-3">
+                            <i class="fas fa-thumbs-up"></i>
+                        </div>
+                        <h2 class="display-4 fw-bold">54%</h2>
+                        [span_4](start_span)<p class="mb-0 text-white-50">აფასებს ევროკავშირს პოზიტიურად 2023 წლის მონაცემებით[span_4](end_span).</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-card p-4 rounded-3 h-100">
+                        <div class="icon-circle bg-danger text-white mx-auto mb-3">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h2 class="display-4 fw-bold">41-ე</h2>
+                        [span_5](start_span)<p class="mb-0 text-white-50">ადგილი უკავია საქართველოს მედიაწიგნიერების ინდექსში (რისკის ქვეშ)[span_5](end_span).</p>
+                    </div>
+                </div>
             </div>
-            <p class="text-sm">&copy; 2025 Evropa.eu.org. All Rights Reserved. Built with a commitment to European Values.</p>
+        </div>
+    </section>
+
+    <section id="chapters" class="py-5 bg-light">
+        <div class="container my-5">
+            <div class="text-center mb-5">
+                <h6 class="text-primary fw-bold text-uppercase ls-2">ნაშრომის სტრუქტურა</h6>
+                <h2 class="fw-bold display-6">აირჩიეთ თემა დეტალური ანალიზისთვის</h2>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm hover-card transition-all">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                                <i class="fas fa-history fa-2x"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">I. მედიის ისტორია</h4>
+                            [span_6](start_span)<p class="card-text text-muted mb-4">ტრადიციული მედიიდან ციფრულ ერამდე: როგორ გარდაიქმნა ინფორმაციის გავრცელების გზები საქართველოში[span_6](end_span).</p>
+                            <a href="history.html" class="btn btn-outline-primary rounded-pill stretched-link fw-bold px-4">წაიკითხე სრულად</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm hover-card transition-all">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon-box bg-danger bg-opacity-10 text-danger mb-4 mx-auto">
+                                <i class="fas fa-user-secret fa-2x"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">II. დეზინფორმაცია</h4>
+                            [span_7](start_span)<p class="card-text text-muted mb-4">როგორ მუშაობს "Sputnik", ყალბი გვერდები და ბოტები ევროინტეგრაციის დისკრედიტაციისთვის[span_7](end_span).</p>
+                            <a href="disinfo.html" class="btn btn-outline-danger rounded-pill stretched-link fw-bold px-4">წაიკითხე სრულად</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm hover-card transition-all">
+                        <div class="card-body p-4 text-center">
+                            <div class="feature-icon-box bg-success bg-opacity-10 text-success mb-4 mx-auto">
+                                <i class="fas fa-users-cog fa-2x"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">III. საზოგადოება</h4>
+                            [span_8](start_span)<p class="card-text text-muted mb-4">საზოგადოებრივი აზრის ფორმაცია და მედიაწიგნიერება: რამდენად დაცულია ამომრჩეველი?[span_8](end_span)</p>
+                            <a href="society.html" class="btn btn-outline-success rounded-pill stretched-link fw-bold px-4">წაიკითხე სრულად</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <h4 class="fw-bold mb-3"><i class="fas fa-star text-warning me-2"></i>EVROPA.EU.ORG</h4>
+                    [span_9](start_span)<p class="text-white-50">ვებგვერდი შექმნილია სულხან-საბა ორბელიანის უნივერსიტეტის საბაკალავრო ნაშრომის ფარგლებში[span_9](end_span).</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-3">ნავიგაცია</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none hover-white">მთავარი</a></li>
+                        <li><a href="history.html" class="text-white-50 text-decoration-none hover-white">ისტორია</a></li>
+                        <li><a href="disinfo.html" class="text-white-50 text-decoration-none hover-white">დეზინფორმაცია</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-3">რესურსები</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li><a href="https://factcheck.ge/" target="_blank" class="text-white-50 text-decoration-none hover-white">FactCheck.ge</a></li>
+                        <li><a href="https://euvsdisinfo.eu/" target="_blank" class="text-white-50 text-decoration-none hover-white">EUvsDisinfo</a></li>
+                        <li><a href="https://mythdetector.ge/" target="_blank" class="text-white-50 text-decoration-none hover-white">მითების დეტექტორი</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-white-50">
+                <small>&copy; 2024 თორნიკე წიკლაური. ყველა უფლება დაცულია.</small>
+            </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
