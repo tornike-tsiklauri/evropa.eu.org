@@ -18,11 +18,14 @@ body {
     background-color: #003399;
     color: white;
     border: none;
+    transition: all 0.3s ease;
 }
 
 .btn-eu-blue:hover {
     background-color: #002266;
     color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Hero სექციის ფონი */
@@ -33,6 +36,15 @@ body {
 }
 
 /* ბარათების ჰოვერ ეფექტი */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.15);
+}
+
 .hover-effect {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -66,6 +78,37 @@ body {
     border-radius: 1rem;
     font-weight: bold;
     font-size: 0.9rem;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Button hover effects for generic buttons */
+.btn:not(.btn-eu-blue) {
+    transition: all 0.3s ease;
+}
+
+.btn:not(.btn-eu-blue):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header, section {
+    animation: fadeIn 0.6s ease-out;
 }
 
 /* Timeline-ის სტილი მობილურისთვის */
