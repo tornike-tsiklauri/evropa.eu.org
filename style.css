@@ -112,16 +112,12 @@ header, section {
 }
 
 /* Timeline-ის სტილი მობილურისთვის */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .border-start {
         border-left: 5px solid !important;
         border-right: none !important;
         border-top: none !important;
         border-bottom: none !important;
-    }
-    .display-4 {
-        font-size: 2.5rem; /* ტექსტის ზომის შემცირება მობილურზე */
-        margin-bottom: 1rem;
     }
 }
 
@@ -159,10 +155,6 @@ header, section {
     
     .card {
         padding: 1rem !important;
-    }
-    
-    .p-4, .p-md-5 {
-        padding: 1.25rem !important;
     }
     
     .py-5 {
@@ -222,10 +214,6 @@ header, section {
     }
     
     .card {
-        padding: 1.5rem !important;
-    }
-    
-    .p-4, .p-md-5 {
         padding: 1.5rem !important;
     }
     
