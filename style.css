@@ -111,13 +111,23 @@ header, section {
     animation: fadeIn 0.6s ease-out;
 }
 
-/* Timeline-ის სტილი მობილურისთვის */
+/* Timeline-ის სტილი და column stacking for mobile and tablets */
 @media (max-width: 991px) {
     .border-start {
         border-left: 5px solid !important;
         border-right: none !important;
         border-top: none !important;
         border-bottom: none !important;
+    }
+    
+    /* Ensure proper column stacking on mobile */
+    .col-lg-6, .col-lg-8 {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Ensure cards are full width on mobile */
+    .row .col-lg-6:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -232,17 +242,5 @@ header, section {
     .card svg {
         width: 120px !important;
         height: 120px !important;
-    }
-}
-
-/* Ensure proper column stacking on mobile */
-@media (max-width: 991px) {
-    .col-lg-6, .col-lg-8 {
-        margin-bottom: 1.5rem;
-    }
-    
-    /* Ensure cards are full width on mobile */
-    .row .col-lg-6:last-child {
-        margin-bottom: 0;
     }
 }
