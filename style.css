@@ -95,6 +95,20 @@ html {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* White button styles for better visibility */
+.btn-white {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+}
+
+.btn-white:hover {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
 /* Fade-in animation */
 @keyframes fadeIn {
     from {
