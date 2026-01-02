@@ -19,12 +19,13 @@ body {
     color: white;
     border: none;
     transition: all 0.3s ease;
+    will-change: transform;
 }
 
 .btn-eu-blue:hover {
     background-color: #002266;
     color: white;
-    transform: translateY(-2px);
+    transform: translate3d(0, -2px, 0);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -88,10 +89,11 @@ html {
 /* Button hover effects for generic buttons */
 .btn:not(.btn-eu-blue) {
     transition: all 0.3s ease;
+    will-change: transform;
 }
 
 .btn:not(.btn-eu-blue):hover {
-    transform: translateY(-2px);
+    transform: translate3d(0, -2px, 0);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -100,12 +102,13 @@ html {
     background-color: #ffffff;
     border: 2px solid #ffffff;
     font-weight: bold;
+    will-change: transform;
 }
 
 .btn-white:hover {
     background-color: #f8f9fa;
     border-color: #f8f9fa;
-    transform: translateY(-2px);
+    transform: translate3d(0, -2px, 0);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
