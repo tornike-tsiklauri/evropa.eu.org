@@ -1,0 +1,11 @@
+# robots.txt for evropa.eu.org
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://evropa.eu.org/sitemap.xml
+
+# Disallow common non-content paths
+Disallow: /.git/
+Disallow: /.vscode/
