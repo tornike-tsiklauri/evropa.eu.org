@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://evropa.eu.org/</loc>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/" />
+  </url>
+  
+  <!-- Disinformation Page -->
+  <url>
+    <loc>https://evropa.eu.org/disinfo.html</loc>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/disinfo.html" />
+  </url>
+  
+  <!-- History Page -->
+  <url>
+    <loc>https://evropa.eu.org/history.html</loc>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/history.html" />
+  </url>
+  
+  <!-- Society Page -->
+  <url>
+    <loc>https://evropa.eu.org/society.html</loc>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/society.html" />
+  </url>
+  
+  <!-- EU Disinformation Page -->
+  <url>
+    <loc>https://evropa.eu.org/eu-dis.html</loc>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/eu-dis.html" />
+  </url>
+
+</urlset>
