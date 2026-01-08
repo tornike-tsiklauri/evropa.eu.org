@@ -212,6 +212,35 @@ a:hover {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Social media icons styling */
+footer a {
+    transition: all 0.3s ease;
+    opacity: 0.85;
+}
+
+footer a:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+/* Image styling for visual elements */
+img.img-fluid {
+    transition: transform 0.3s ease;
+}
+
+img.img-fluid:hover {
+    transform: scale(1.02);
+}
+
+/* Enhanced icon styles for headers */
+header i.fa-5x {
+    transition: all 0.3s ease;
+}
+
+header:hover i.fa-5x {
+    transform: scale(1.1);
+}
+
 /* Fade-in animation */
 @keyframes fadeIn {
     from {
