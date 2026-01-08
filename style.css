@@ -101,6 +101,7 @@ a:hover {
 }
 
 /* Accent colors - Slate Grey and Light Azure */
+/* Slate Grey for subtle backgrounds (optional), Light Azure for borders and hover effects */
 .bg-accent-grey {
     background-color: #708090; /* Slate Grey */
 }
