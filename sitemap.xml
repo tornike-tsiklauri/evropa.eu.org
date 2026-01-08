@@ -2,46 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <!-- Home Page -->
+  <!-- Home Page - Georgian -->
   <url>
     <loc>https://evropa.eu.org/</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/index-en.html" />
   </url>
   
-  <!-- Disinformation Page -->
+  <!-- Home Page - English -->
   <url>
-    <loc>https://evropa.eu.org/disinfo.html</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://evropa.eu.org/index-en.html</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/index-en.html" />
+  </url>
+  
+  <!-- About Page - Georgian -->
+  <url>
+    <loc>https://evropa.eu.org/about.html</loc>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/disinfo.html" />
+    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/about-en.html" />
   </url>
   
-  <!-- History Page -->
+  <!-- About Page - English -->
+  <url>
+    <loc>https://evropa.eu.org/about-en.html</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/about-en.html" />
+  </url>
+  
+  <!-- History Page - Georgian -->
   <url>
     <loc>https://evropa.eu.org/history.html</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/history.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/history-en.html" />
   </url>
   
-  <!-- Society Page -->
+  <!-- History Page - English -->
+  <url>
+    <loc>https://evropa.eu.org/history-en.html</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/history.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/history-en.html" />
+  </url>
+  
+  <!-- Disinformation Page - Georgian -->
+  <url>
+    <loc>https://evropa.eu.org/disinfo.html</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/disinfo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/disinfo-en.html" />
+  </url>
+  
+  <!-- Disinformation Page - English -->
+  <url>
+    <loc>https://evropa.eu.org/disinfo-en.html</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/disinfo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/disinfo-en.html" />
+  </url>
+  
+  <!-- Society Page - Georgian -->
   <url>
     <loc>https://evropa.eu.org/society.html</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/society.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/society-en.html" />
+  </url>
+  
+  <!-- Society Page - English -->
+  <url>
+    <loc>https://evropa.eu.org/society-en.html</loc>
+    <lastmod>2025-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/society.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/society-en.html" />
   </url>
   
   <!-- EU Disinformation Page -->
   <url>
     <loc>https://evropa.eu.org/eu-dis.html</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/eu-dis.html" />
