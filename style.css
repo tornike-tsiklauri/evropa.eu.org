@@ -233,11 +233,11 @@ img.img-fluid:hover {
 }
 
 /* Enhanced icon styles for headers */
-header i.fa-5x {
+.header-icon {
     transition: all 0.3s ease;
 }
 
-header:hover i.fa-5x {
+.header-icon:hover {
     transform: scale(1.1);
 }
 
