@@ -249,6 +249,144 @@
             </div>
         </div>
 
+        <hr class="my-5">
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h3 class="mb-4">Quiz: Society's Resilience</h3>
+                <div class="quiz-container" id="quizContainer">
+                    <div class="quiz-question" data-question="1" data-correct="b">
+                        <h5>Question 1: According to 2023 data, what percentage of the population holds a neutral position towards the European Union?</h5>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="a">
+                            a) 54%
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="b">
+                            b) 44%
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="c">
+                            c) 2%
+                        </label>
+                    </div>
+
+                    <div class="quiz-question" data-question="2" data-correct="c">
+                        <h5>Question 2: Why is the neutral segment considered most vulnerable to disinformation?</h5>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="a">
+                            a) Because they don't have access to the internet
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="b">
+                            b) Because they only watch Russian media
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="c">
+                            c) Because they have not yet formed a firm position
+                        </label>
+                    </div>
+
+                    <div class="quiz-question" data-question="3" data-correct="a">
+                        <h5>Question 3: What factors determine the different level of awareness among ethnic minorities?</h5>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="a">
+                            a) Language barriers and Russian media consumption
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="b">
+                            b) Low internet speed in the regions
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="c">
+                            c) Lack of information about the EU in Georgian language
+                        </label>
+                    </div>
+
+                    <div class="quiz-question" data-question="4" data-correct="b">
+                        <h5>Question 4: What percentage of the ethnically Azerbaijani population has a neutral attitude?</h5>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="a">
+                            a) 52%
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="b">
+                            b) 47%
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="c">
+                            c) 44%
+                        </label>
+                    </div>
+
+                    <div class="quiz-question" data-question="5" data-correct="c">
+                        <h5>Question 5: According to the Bulgaria Open Society Institute Index, what place does Georgia rank in terms of media literacy?</h5>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="a">
+                            a) 1st place
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="b">
+                            b) 25th place
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="c">
+                            c) 41st place (among 41 countries)
+                        </label>
+                    </div>
+
+                    <div class="quiz-question" data-question="6" data-correct="a">
+                        <h5>Question 6: According to sources, which organizations' reach needs to be expanded to combat disinformation?</h5>
+                        <label class="quiz-option">
+                            <input type="radio" name="q6" value="a">
+                            a) "Myth Detector" and "FactCheck.ge"
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q6" value="b">
+                            b) "Georgia First News" and "Sputnik Georgia"
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q6" value="c">
+                            c) "Netgazeti" and "Intermedia.ge"
+                        </label>
+                    </div>
+
+                    <div class="quiz-question" data-question="7" data-correct="b">
+                        <h5>Question 7: Which of the following is one of the recommendations for combating disinformation?</h5>
+                        <label class="quiz-option">
+                            <input type="radio" name="q7" value="a">
+                            a) Banning the use of social media
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q7" value="b">
+                            b) Fighting indirect disinformation, education and engagement
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q7" value="c">
+                            c) Only trusting traditional media
+                        </label>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button class="quiz-submit-btn" id="submitQuiz" 
+                            data-alert-message="Please answer all questions!"
+                            data-perfect-message="🎉 Excellent! All answers are correct!"
+                            data-good-message="👍 Good job! Keep learning."
+                            data-tryagain-message="📚 Review the material again and try once more."
+                            data-result-shown="Results Shown">Show Results</button>
+                    </div>
+
+                    <div class="quiz-result" id="quizResult">
+                        <div class="text-center">
+                            <div class="quiz-score" id="quizScore"></div>
+                            <p id="quizMessage"></p>
+                            <p class="text-muted mt-3">Correct answers: 1-b; 2-c; 3-a; 4-b; 5-c; 6-a; 7-b.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <nav class="blog-pagination mt-5 d-flex justify-content-between" aria-label="Pagination">
             <a class="btn btn-outline-secondary rounded-pill" href="disinfo-en.html">← Back: Disinformation</a>
             <a class="btn btn-eu-blue rounded-pill" href="index-en.html">Return to Home</a>
@@ -269,6 +407,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="quiz.js"></script>
 
     <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
     <script src="https://elfsightcdn.com/platform.js" async></script>

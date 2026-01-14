@@ -14,14 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const tryAgainMessage = submitBtn.getAttribute('data-tryagain-message') || '📚 Review the material again and try once more.';
     const resultShownText = submitBtn.getAttribute('data-result-shown') || 'Results Shown';
     
-    // Correct answers
-    const correctAnswers = {
-        q1: 'a',
-        q2: 'b',
-        q3: 'b',
-        q4: 'c',
-        q5: 'b'
-    };
+    // Dynamically get correct answers from data attributes
+    const correctAnswers = {};
+    document.querySelectorAll('.quiz-question').forEach(question => {
+        const questionNum = question.getAttribute('data-question');
+        const correctAnswer = question.getAttribute('data-correct');
+        if (questionNum && correctAnswer) {
+            correctAnswers[`q${questionNum}`] = correctAnswer;
+        }
+    });
 
     // Add click handlers to options
     quizOptions.forEach(option => {
