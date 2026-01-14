@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let correctAnswers;
     
     // Check which page we're on to set correct answers
-    if (window.location.pathname.includes('society')) {
+    const pathname = window.location.pathname;
+    if (pathname.endsWith('society.html') || pathname.endsWith('society-en.html')) {
         // Chapter 3 quiz - 6 questions
         correctAnswers = {
             q1: 'c',
