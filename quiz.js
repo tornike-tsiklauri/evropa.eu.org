@@ -56,6 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             const questionDiv = document.querySelector(`[data-question="${question.substring(1)}"]`);
+            if (!questionDiv) continue;
+            
             const options = questionDiv.querySelectorAll('.quiz-option');
 
             // Check if answer is correct
@@ -81,11 +83,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 errorMsg = document.createElement('div');
                 errorMsg.id = 'quizError';
                 errorMsg.className = 'alert alert-danger mt-3';
-                errorMsg.innerHTML = `<i class="fas fa-exclamation-circle me-2"></i>${alertMessage}`;
-                quizContainer.insertBefore(errorMsg, document.querySelector('.text-center.mt-4'));
+                const icon = document.createElement('i');
+                icon.className = 'fas fa-exclamation-circle me-2';
+                errorMsg.appendChild(icon);
+                const textNode = document.createTextNode(alertMessage);
+                errorMsg.appendChild(textNode);
+                
+                const submitContainer = document.querySelector('.text-center.mt-4');
+                if (submitContainer) {
+                    quizContainer.insertBefore(errorMsg, submitContainer);
+                }
             }
-            errorMsg.style.display = 'block';
-            errorMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            if (errorMsg.parentElement) {
+                errorMsg.style.display = 'block';
+                errorMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
             return;
         }
 
