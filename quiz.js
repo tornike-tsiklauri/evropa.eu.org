@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
     quizOptions.forEach(option => {
         option.addEventListener('click', function() {
             const input = this.querySelector('input[type="radio"]');
+            if (!input) return;
+            
             input.checked = true;
             
             // Remove selected class from siblings
@@ -69,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Highlight the correct answer
                 options.forEach(option => {
                     const input = option.querySelector('input[type="radio"]');
-                    if (input.value === correctAnswers[question]) {
+                    if (input && input.value === correctAnswers[question]) {
                         option.classList.add('correct');
                     }
                 });
@@ -94,10 +96,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     quizContainer.insertBefore(errorMsg, submitContainer);
                 }
             }
-            if (errorMsg.parentElement) {
-                errorMsg.style.display = 'block';
-                errorMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }
+            errorMsg.style.display = 'block';
+            errorMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             return;
         }
 
