@@ -14,14 +14,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const tryAgainMessage = submitBtn.getAttribute('data-tryagain-message') || '📚 Review the material again and try once more.';
     const resultShownText = submitBtn.getAttribute('data-result-shown') || 'Results Shown';
     
-    // Correct answers
-    const correctAnswers = {
-        q1: 'a',
-        q2: 'b',
-        q3: 'b',
-        q4: 'c',
-        q5: 'b'
-    };
+    // Correct answers - determine based on page
+    let correctAnswers;
+    
+    // Check which page we're on to set correct answers
+    if (window.location.pathname.includes('society')) {
+        // Chapter 3 quiz - 6 questions
+        correctAnswers = {
+            q1: 'c',
+            q2: 'b',
+            q3: 'b',
+            q4: 'c',
+            q5: 'b',
+            q6: 'a'
+        };
+    } else {
+        // Chapter 2 quiz - 5 questions
+        correctAnswers = {
+            q1: 'a',
+            q2: 'b',
+            q3: 'b',
+            q4: 'c',
+            q5: 'b'
+        };
+    }
 
     // Add click handlers to options
     quizOptions.forEach(option => {
