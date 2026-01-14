@@ -163,6 +163,103 @@
                         <iframe src="https://player.vimeo.com/video/1150999370?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="როგორ ვრცელდება დეზინფორმაცია საქართველოს ევროინტეგრაციზე, როგორ გამოიყურება დეზინფორმაციის ეკოსისტემა"></iframe>
                     </div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
+
+                    <hr class="my-5">
+
+                    <h3 class="mb-4">ნაწილი II: ქვიზი (თავი I: მედიის ევოლუცია საქართველოში)</h3>
+                    <div class="quiz-container" id="quizContainer">
+                        <div class="quiz-question" data-question="1">
+                            <h5>კითხვა 1: რატომ არის მნიშვნელოვანი მედიის ისტორიის ცოდნა დეზინფორმაციასთან ბრძოლის კონტექსტში?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="a">
+                                ა) რათა გავიგოთ, როგორ მუშაობდა მედია, როგორც ტოტალიტარული რეჟიმის იარაღი
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="b">
+                                ბ) რათა შევისწავლოთ პირველი რადიოპროგრამების შინაარსი
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="c">
+                                გ) რათა დავთვალოთ ჟურნალისტების რაოდენობა
+                            </label>
+                        </div>
+
+                        <div class="quiz-question" data-question="2">
+                            <h5>კითხვა 2: როდის დაიწყო საქართველოში პირველი რადიომაუწყებლობა?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="a">
+                                ა) 1956 წელს
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="b">
+                                ბ) 1925 წლის 21 მაისს
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="c">
+                                გ) 2005 წელს
+                            </label>
+                        </div>
+
+                        <div class="quiz-question" data-question="3">
+                            <h5>კითხვა 3: რა იყო საბჭოთა პერიოდის ტელევიზიის მთავარი მახასიათებელი?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="a">
+                                ა) დამოუკიდებელი ჟურნალისტიკა
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="b">
+                                ბ) სრული სახელმწიფო კონტროლი და პროპაგანდისტული დანიშნულება
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="c">
+                                გ) გასართობი გადაცემების სიმრავლე
+                            </label>
+                        </div>
+
+                        <div class="quiz-question" data-question="4">
+                            <h5>კითხვა 4: მოსახლეობის რამდენი პროცენტი სარგებლობდა ინტერნეტით 2005 წელს?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="a">
+                                ა) 50%
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="b">
+                                ბ) 25%
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="c">
+                                გ) 6%
+                            </label>
+                        </div>
+
+                        <div class="quiz-question" data-question="5">
+                            <h5>კითხვა 5: რომელი წლიდან იწყება საქართველოში ციფრული მედიის მასობრივი მოხმარება და სოციალური ქსელების გავრცელება?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="a">
+                                ა) 1925 წლიდან
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="b">
+                                ბ) 2011 წლიდან
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="c">
+                                გ) 1956 წლიდან
+                            </label>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button class="quiz-submit-btn" id="submitQuiz">შედეგის ნახვა</button>
+                        </div>
+
+                        <div class="quiz-result" id="quizResult">
+                            <div class="text-center">
+                                <div class="quiz-score" id="quizScore"></div>
+                                <p id="quizMessage"></p>
+                                <p class="text-muted mt-3">სწორი პასუხები: 1-ა; 2-ბ; 3-ბ; 4-გ; 5-ბ.</p>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <nav class="blog-pagination mt-5 d-flex justify-content-between" aria-label="Pagination">
@@ -211,6 +308,105 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+    <script>
+        // Quiz functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const quizOptions = document.querySelectorAll('.quiz-option');
+            const submitBtn = document.getElementById('submitQuiz');
+            const quizResult = document.getElementById('quizResult');
+            const quizScore = document.getElementById('quizScore');
+            const quizMessage = document.getElementById('quizMessage');
+            
+            // Correct answers
+            const correctAnswers = {
+                q1: 'a',
+                q2: 'b',
+                q3: 'b',
+                q4: 'c',
+                q5: 'b'
+            };
+
+            // Add click handlers to options
+            quizOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    const input = this.querySelector('input[type="radio"]');
+                    input.checked = true;
+                    
+                    // Remove selected class from siblings
+                    const name = input.name;
+                    document.querySelectorAll(`input[name="${name}"]`).forEach(radio => {
+                        radio.parentElement.classList.remove('selected');
+                    });
+                    
+                    // Add selected class to this option
+                    this.classList.add('selected');
+                });
+            });
+
+            // Submit quiz
+            submitBtn.addEventListener('click', function() {
+                let score = 0;
+                let totalQuestions = Object.keys(correctAnswers).length;
+                let allAnswered = true;
+
+                // Check each question
+                for (let question in correctAnswers) {
+                    const selected = document.querySelector(`input[name="${question}"]:checked`);
+                    
+                    if (!selected) {
+                        allAnswered = false;
+                        continue;
+                    }
+
+                    const questionDiv = document.querySelector(`[data-question="${question.substring(1)}"]`);
+                    const options = questionDiv.querySelectorAll('.quiz-option');
+
+                    // Check if answer is correct
+                    if (selected.value === correctAnswers[question]) {
+                        score++;
+                        selected.parentElement.classList.add('correct');
+                    } else {
+                        selected.parentElement.classList.add('incorrect');
+                        // Highlight the correct answer
+                        options.forEach(option => {
+                            const input = option.querySelector('input[type="radio"]');
+                            if (input.value === correctAnswers[question]) {
+                                option.classList.add('correct');
+                            }
+                        });
+                    }
+                }
+
+                if (!allAnswered) {
+                    alert('გთხოვთ, უპასუხოთ ყველა კითხვას!');
+                    return;
+                }
+
+                // Display result
+                const percentage = (score / totalQuestions) * 100;
+                quizScore.textContent = `${score}/${totalQuestions}`;
+                
+                if (percentage === 100) {
+                    quizMessage.textContent = '🎉 შესანიშნავია! ყველა პასუხი სწორია!';
+                    quizResult.className = 'quiz-result show success';
+                } else if (percentage >= 60) {
+                    quizMessage.textContent = '👍 კარგია! გააგრძელეთ სწავლა.';
+                    quizResult.className = 'quiz-result show warning';
+                } else {
+                    quizMessage.textContent = '📚 გაეცანით მასალას კიდევ ერთხელ და სცადეთ თავიდან.';
+                    quizResult.className = 'quiz-result show danger';
+                }
+
+                // Disable submit button
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'შედეგი ნაჩვენებია';
+
+                // Scroll to result
+                quizResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            });
+        });
+    </script>
 
     <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
     <script src="https://elfsightcdn.com/platform.js" async></script>

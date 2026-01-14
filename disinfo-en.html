@@ -164,6 +164,103 @@
                         <iframe src="https://player.vimeo.com/video/1150999370?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="როგორ ვრცელდება დეზინფორმაცია საქართველოს ევროინტეგრაციზე, როგორ გამოიყურება დეზინფორმაციის ეკოსისტემა"></iframe>
                     </div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
+
+                    <hr class="my-5">
+
+                    <h3 class="mb-4">Part II: Quiz (Chapter I: Media Evolution in Georgia)</h3>
+                    <div class="quiz-container" id="quizContainer">
+                        <div class="quiz-question" data-question="1">
+                            <h5>Question 1: Why is knowledge of media history important in the context of fighting disinformation?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="a">
+                                a) To understand how media worked as a tool of totalitarian regimes
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="b">
+                                b) To study the content of the first radio programs
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="c">
+                                c) To count the number of journalists
+                            </label>
+                        </div>
+
+                        <div class="quiz-question" data-question="2">
+                            <h5>Question 2: When did the first radio broadcasting start in Georgia?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="a">
+                                a) In 1956
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="b">
+                                b) May 21, 1925
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="c">
+                                c) In 2005
+                            </label>
+                        </div>
+
+                        <div class="quiz-question" data-question="3">
+                            <h5>Question 3: What was the main characteristic of Soviet-era television?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="a">
+                                a) Independent journalism
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="b">
+                                b) Full state control and propaganda purpose
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="c">
+                                c) Abundance of entertainment programs
+                            </label>
+                        </div>
+
+                        <div class="quiz-question" data-question="4">
+                            <h5>Question 4: What percentage of the population used the internet in 2005?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="a">
+                                a) 50%
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="b">
+                                b) 25%
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q4" value="c">
+                                c) 6%
+                            </label>
+                        </div>
+
+                        <div class="quiz-question" data-question="5">
+                            <h5>Question 5: From which year does mass consumption of digital media and the spread of social networks begin in Georgia?</h5>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="a">
+                                a) From 1925
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="b">
+                                b) From 2011
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q5" value="c">
+                                c) From 1956
+                            </label>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button class="quiz-submit-btn" id="submitQuiz">View Results</button>
+                        </div>
+
+                        <div class="quiz-result" id="quizResult">
+                            <div class="text-center">
+                                <div class="quiz-score" id="quizScore"></div>
+                                <p id="quizMessage"></p>
+                                <p class="text-muted mt-3">Correct answers: 1-a; 2-b; 3-b; 4-c; 5-b.</p>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
                 <nav class="blog-pagination mt-5 d-flex justify-content-between" aria-label="Pagination">
@@ -212,6 +309,105 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+    <script>
+        // Quiz functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const quizOptions = document.querySelectorAll('.quiz-option');
+            const submitBtn = document.getElementById('submitQuiz');
+            const quizResult = document.getElementById('quizResult');
+            const quizScore = document.getElementById('quizScore');
+            const quizMessage = document.getElementById('quizMessage');
+            
+            // Correct answers
+            const correctAnswers = {
+                q1: 'a',
+                q2: 'b',
+                q3: 'b',
+                q4: 'c',
+                q5: 'b'
+            };
+
+            // Add click handlers to options
+            quizOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    const input = this.querySelector('input[type="radio"]');
+                    input.checked = true;
+                    
+                    // Remove selected class from siblings
+                    const name = input.name;
+                    document.querySelectorAll(`input[name="${name}"]`).forEach(radio => {
+                        radio.parentElement.classList.remove('selected');
+                    });
+                    
+                    // Add selected class to this option
+                    this.classList.add('selected');
+                });
+            });
+
+            // Submit quiz
+            submitBtn.addEventListener('click', function() {
+                let score = 0;
+                let totalQuestions = Object.keys(correctAnswers).length;
+                let allAnswered = true;
+
+                // Check each question
+                for (let question in correctAnswers) {
+                    const selected = document.querySelector(`input[name="${question}"]:checked`);
+                    
+                    if (!selected) {
+                        allAnswered = false;
+                        continue;
+                    }
+
+                    const questionDiv = document.querySelector(`[data-question="${question.substring(1)}"]`);
+                    const options = questionDiv.querySelectorAll('.quiz-option');
+
+                    // Check if answer is correct
+                    if (selected.value === correctAnswers[question]) {
+                        score++;
+                        selected.parentElement.classList.add('correct');
+                    } else {
+                        selected.parentElement.classList.add('incorrect');
+                        // Highlight the correct answer
+                        options.forEach(option => {
+                            const input = option.querySelector('input[type="radio"]');
+                            if (input.value === correctAnswers[question]) {
+                                option.classList.add('correct');
+                            }
+                        });
+                    }
+                }
+
+                if (!allAnswered) {
+                    alert('Please answer all questions!');
+                    return;
+                }
+
+                // Display result
+                const percentage = (score / totalQuestions) * 100;
+                quizScore.textContent = `${score}/${totalQuestions}`;
+                
+                if (percentage === 100) {
+                    quizMessage.textContent = '🎉 Excellent! All answers are correct!';
+                    quizResult.className = 'quiz-result show success';
+                } else if (percentage >= 60) {
+                    quizMessage.textContent = '👍 Good job! Keep learning.';
+                    quizResult.className = 'quiz-result show warning';
+                } else {
+                    quizMessage.textContent = '📚 Review the material again and try once more.';
+                    quizResult.className = 'quiz-result show danger';
+                }
+
+                // Disable submit button
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Results Shown';
+
+                // Scroll to result
+                quizResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            });
+        });
+    </script>
 
     <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
     <script src="https://elfsightcdn.com/platform.js" async></script>
