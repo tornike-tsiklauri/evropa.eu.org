@@ -198,6 +198,114 @@
             </div>
         </div>
 
+        <hr class="my-5">
+
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <h3 class="mb-4"><i class="fas fa-question-circle me-2"></i>Quiz (Chapter I: Media Evolution in Georgia)</h3>
+                <p class="text-muted mb-4">Test your knowledge about media history. Answer all questions and view the results.</p>
+                
+                <div class="quiz-container" id="quizContainer">
+                    <div class="quiz-question" data-question="1">
+                        <h5>Question 1: Why is knowledge of media history important in the context of fighting disinformation?</h5>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="a">
+                            a) To understand how media worked as a tool of totalitarian regimes
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="b">
+                            b) To study the content of the first radio programs
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="c">
+                            c) To count the number of journalists
+                        </label>
+                    </div>
+
+                    <div class="quiz-question" data-question="2">
+                        <h5>Question 2: When did the first radio broadcasting start in Georgia?</h5>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="a">
+                            a) In 1956
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="b">
+                            b) May 21, 1925
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="c">
+                            c) In 2005
+                        </label>
+                    </div>
+
+                    <div class="quiz-question" data-question="3">
+                        <h5>Question 3: What was the main characteristic of Soviet-era television?</h5>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="a">
+                            a) Independent journalism
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="b">
+                            b) Full state control and propaganda purpose
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="c">
+                            c) Abundance of entertainment programs
+                        </label>
+                    </div>
+
+                    <div class="quiz-question" data-question="4">
+                        <h5>Question 4: What percentage of the population used the internet in 2005?</h5>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="a">
+                            a) 50%
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="b">
+                            b) 25%
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="c">
+                            c) 6%
+                        </label>
+                    </div>
+
+                    <div class="quiz-question" data-question="5">
+                        <h5>Question 5: From which year does mass consumption of digital media and the spread of social networks begin in Georgia?</h5>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="a">
+                            a) From 1925
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="b">
+                            b) From 2011
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="c">
+                            c) From 1956
+                        </label>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button class="quiz-submit-btn" id="submitQuiz"
+                            data-alert-message="Please answer all questions!"
+                            data-perfect-message="🎉 Excellent! All answers are correct!"
+                            data-good-message="👍 Good job! Keep learning."
+                            data-tryagain-message="📚 Review the material again and try once more."
+                            data-result-shown="Results Shown">View Results</button>
+                    </div>
+
+                    <div class="quiz-result" id="quizResult">
+                        <div class="text-center">
+                            <div class="quiz-score" id="quizScore"></div>
+                            <p id="quizMessage"></p>
+                            <p class="text-muted mt-3"><strong>Correct answers:</strong> 1-a; 2-b; 3-b; 4-c; 5-b.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <nav class="blog-pagination mt-4 d-flex justify-content-end" aria-label="Pagination">
             <a class="btn btn-outline-primary rounded-pill" href="disinfo-en.html">Next: Disinformation →</a>
         </nav>
@@ -217,6 +325,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="quiz.js"></script>
 
     <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
     <script src="https://elfsightcdn.com/platform.js" async></script>
