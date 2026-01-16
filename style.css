@@ -266,7 +266,6 @@ img.img-fluid:hover {
 
 header, section {
     animation: fadeIn 0.6s ease-out;
-    will-change: transform, opacity;
 }
 
 /* Timeline-ის სტილი და column stacking for mobile and tablets */
