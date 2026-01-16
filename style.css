@@ -6,6 +6,17 @@ body {
     background-color: #FFFFFF; /* Crisp White background */
 }
 
+/* Performance optimization: contain layout for cards */
+.card {
+    contain: layout style paint;
+}
+
+/* Performance optimization: content-visibility for sections */
+section {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+}
+
 /* Royal Blue - Primary Brand Color */
 .bg-eu-blue {
     background-color: #2B6BE6 !important;
@@ -245,11 +256,11 @@ img.img-fluid:hover {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translate3d(0, 20px, 0);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
