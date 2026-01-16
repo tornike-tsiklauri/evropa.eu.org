@@ -23,7 +23,7 @@
     <meta property="og:site_name" content="evropa.eu.org">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="ka_GE">
-    <meta property="og:image" content="https://evropa.eu.org/img/1767796696826.jpg">
+    <meta property="og:image" content="https://evropa.eu.org/img/hero-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="evropa.eu.org - About Us">
@@ -32,7 +32,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About Us | evropa.eu.org">
     <meta name="twitter:description" content="Research platform on Georgia's European integration process and the impact of disinformation.">
-    <meta name="twitter:image" content="https://evropa.eu.org/img/1767796696826.jpg">
+    <meta name="twitter:image" content="https://evropa.eu.org/img/hero-image.jpg">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -42,9 +42,15 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#2B6BE6">
     
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="style.css">
     
     <!-- Structured Data -->
@@ -248,7 +254,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
 </body>
 </html>
