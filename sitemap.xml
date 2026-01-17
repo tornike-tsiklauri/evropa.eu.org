@@ -1,156 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
-  <!-- 
-    Sitemap for evropa.eu.org - European Integration Studies Multimedia Platform
-    ევროპული კვლევების მულტიმედია პლატფორმა
-    
-    This website is available in two languages:
-    - Georgian (ka) - Primary language
-    - English (en) - Alternative language
-    
-    Main content sections:
-    1. Home (მთავარი) - Platform overview and navigation
-    2. Media History (მედიის ისტორია) - Georgian media evolution from 1925 to digital era
-    3. Disinformation (დეზინფორმაცია) - Research on disinformation and European integration
-    4. Society (საზოგადოება) - Public opinion research and media literacy statistics
-    5. About (ჩვენ შესახებ) - Information about the platform
-  -->
-  
-  <!-- Home Page - Georgian (მთავარი გვერდი - ქართული) -->
-  <!-- Main landing page: სრული სურათი ევროინტეგრაციაზე -->
-  <url>
-    <loc>https://evropa.eu.org/</loc>
-    <lastmod>2026-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/index-en.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://evropa.eu.org/" />
-    <image:image>
-      <image:loc>https://evropa.eu.org/img/1767796696826.jpg</image:loc>
-      <image:title>ევროინტეგრაცია საქართველო</image:title>
-      <image:caption>კვლევა საქართველოს ევროინტეგრაციის პროცესისა და დეზინფორმაციის გავლენის შესახებ</image:caption>
-    </image:image>
-  </url>
-  
-  <!-- Home Page - English -->
-  <!-- English version: Complete Picture of European Integration -->
-  <url>
-    <loc>https://evropa.eu.org/index-en.html</loc>
-    <lastmod>2026-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/index-en.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://evropa.eu.org/" />
-    <image:image>
-      <image:loc>https://evropa.eu.org/img/1767796696826.jpg</image:loc>
-      <image:title>European Integration Georgia</image:title>
-      <image:caption>Research on Georgia's European integration process and the impact of disinformation</image:caption>
-    </image:image>
-  </url>
-  
-  <!-- About Page - Georgian (ჩვენ შესახებ - ქართული) -->
-  <!-- Platform mission, vision and goals -->
-  <url>
-    <loc>https://evropa.eu.org/about.html</loc>
-    <lastmod>2026-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/about.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/about-en.html" />
-  </url>
-  
-  <!-- About Page - English -->
-  <!-- About the platform: mission, vision and goals -->
-  <url>
-    <loc>https://evropa.eu.org/about-en.html</loc>
-    <lastmod>2026-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/about.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/about-en.html" />
-  </url>
-  
-  <!-- History Page - Georgian (მედიის ისტორია - თავი I - ქართული) -->
-  <!-- Georgian media development from 1925 to digital era -->
-  <!-- Content: ქართული მედიის განვითარება 1925 წლიდან ციფრულ ერამდე -->
-  <url>
-    <loc>https://evropa.eu.org/history.html</loc>
-    <lastmod>2026-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/history.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/history-en.html" />
-  </url>
-  
-  <!-- History Page - English (Chapter I) -->
-  <!-- The development of Georgian media from 1925 to the digital era -->
-  <url>
-    <loc>https://evropa.eu.org/history-en.html</loc>
-    <lastmod>2026-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/history.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/history-en.html" />
-  </url>
-  
-  <!-- Disinformation Page - Georgian (დეზინფორმაცია - თავი II - ქართული) -->
-  <!-- Main research chapter on disinformation spread in digital media -->
-  <!-- Content: როგორ ვრცელდება ყალბი ამბები ციფრულ მედიაში, Sputnik-ის ნარატივები და რუსული „რბილი ძალა" -->
-  <url>
-    <loc>https://evropa.eu.org/disinfo.html</loc>
-    <lastmod>2026-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/disinfo.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/disinfo-en.html" />
-  </url>
-  
-  <!-- Disinformation Page - English (Chapter II) -->
-  <!-- How fake news spreads in digital media, Sputnik's narratives, and Russian "soft power" -->
-  <url>
-    <loc>https://evropa.eu.org/disinfo-en.html</loc>
-    <lastmod>2026-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/disinfo.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/disinfo-en.html" />
-  </url>
-  
-  <!-- Society Page - Georgian (საზოგადოება - თავი III - ქართული) -->
-  <!-- Public opinion research, ethnic minority attitudes, and media literacy statistics -->
-  <!-- Content: საზოგადოებრივი აზრის კვლევები, ეთნიკური უმცირესობების განწყობები და მედიაწიგნიერების სტატისტიკა -->
-  <url>
-    <loc>https://evropa.eu.org/society.html</loc>
-    <lastmod>2026-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/society.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/society-en.html" />
-  </url>
-  
-  <!-- Society Page - English (Chapter III) -->
-  <!-- Public opinion research, ethnic minority attitudes, and media literacy statistics -->
-  <url>
-    <loc>https://evropa.eu.org/society-en.html</loc>
-    <lastmod>2026-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/society.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://evropa.eu.org/society-en.html" />
-  </url>
-  
-  <!-- EU Disinformation Page - Georgian (დეზინფორმაცია და ევროინტეგრაცია - ქართული) -->
-  <!-- Information attacks and soft power against Georgia's European integration -->
-  <!-- Content: ინფორმაციული შეტევები და რბილი ძალა საქართველოს ევროინტეგრაციის წინააღმდეგ -->
-  <url>
-    <loc>https://evropa.eu.org/eu-dis.html</loc>
-    <lastmod>2026-01-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ka" href="https://evropa.eu.org/eu-dis.html" />
-  </url>
-
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>https://evropa.eu.org/</loc>
+<lastmod>2026-01-17T15:14:48+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://evropa.eu.org/history</loc>
+<lastmod>2026-01-17T15:14:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://evropa.eu.org/disinfo</loc>
+<lastmod>2026-01-17T15:14:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://evropa.eu.org/society</loc>
+<lastmod>2026-01-17T15:14:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://evropa.eu.org/about</loc>
+<lastmod>2026-01-17T15:14:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://evropa.eu.org/index-en</loc>
+<lastmod>2026-01-17T15:14:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://evropa.eu.org/history-en</loc>
+<lastmod>2026-01-17T15:14:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://evropa.eu.org/disinfo-en</loc>
+<lastmod>2026-01-17T15:14:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://evropa.eu.org/society-en</loc>
+<lastmod>2026-01-17T15:14:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://evropa.eu.org/about-en</loc>
+<lastmod>2026-01-17T15:14:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>
